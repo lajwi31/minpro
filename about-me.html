@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Bootstrap 5 | Ngoding Pintar</title>
+    <!-- Memanggil css Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Memanggil css custom -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="home">
+    <!-- Navbar Section Start -->
+    <nav  class="navbar navbar-expand-lg navbar-dark shadow fixed-top"
+        style="background-color:rgba(28, 165, 238, 0.588);">
+        <div class="container">
+            <a class="navbar-brand" href="index.html#home">31Lajwi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#achievment">ACHIEVMENT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT ME</a>
+                    </li>
+                </ul>
+                <a href="about-me.html"><button class="btn btn-succes">About Me</button></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Section end -->
+
+    <!-- Jumbotron Section Start -->
+    <section class="jumbotron text-center">
+        <div class="container-fluid " aria-label="breadcumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About Me</li>
+            </ol>
+            <div class="alert alert-success" role="alert">
+                A simple success alert—check it out!
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="img-thumbnail rounded" src="images/IMG_20141126_154520.jpg" alt="" srcset="">
+                </div>
+                <div class="col-md-6">
+                    <h1 class="display-4 mt-3">Me, 31Lajwi</h1>
+                    <p class="lead">Fullstack Web Enthusiasm.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fugiat dolore, saepe qui aspernatur consequuntur minima excepturi? Ab hic eos eveniet, nulla perspiciatis ducimus nam iste ipsum odio alias eaque.</p>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1"
+                d="M0,64L40,101.3C80,139,160,213,240,245.3C320,277,400,267,480,218.7C560,171,640,85,720,53.3C800,21,880,43,960,90.7C1040,139,1120,213,1200,218.7C1280,224,1360,160,1400,128L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+
+    <!-- DOM Implementation Section Start -->
+    <section id="domImp1">
+        <div class="container">
+            <div class="row text-center pb-5">
+                <h5>Implementasi DOM pada Mini Project</h5>
+            </div>
+            <div class="row text-center">
+                <h1 id="dom1">Hello World</h1>
+                <p class="p1" on></p>
+                <p class="p1"></p>
+                <p class="p1"></p>
+                <p class="p1 mouseover mouseout" onmouseover="mOver()" onmouseout="mOut()"></p>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <div class="btn btn-primary" onclick="ubahWarna()" id="btn">
+                        DOM Onclick 1
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="btn btn-warning" onclick = "pesan()">
+                        DOM Alert
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="btn btn-success">
+                        Button Baru
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- DOM Implementation Section End -->
+
+
+    <!-- Contact With Form -->
+    <section id="contact">
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col">
+                    <h2>Contact Me</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="name"
+                                aria-describedby="name">
+                        </div>
+                        <div class="mb-3" id=>
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email"
+                                aria-describedby="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="pesan" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-send" onclick="cekSend()">Kirim</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#1ca5ee96" fill-opacity="1"
+                d="M0,32L48,58.7C96,85,192,139,288,144C384,149,480,107,576,90.7C672,75,768,85,864,122.7C960,160,1056,224,1152,240C1248,256,1344,224,1392,208L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer  -->
+    <footer class="text-white text-center pb-5" style="background-color:#1ca5ee96;">
+        <p>Created with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-egg-fried text-warning" viewBox="0 0 16 16">
+                <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                <path
+                    d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z" />
+            </svg> by <a href="https:/instagram.com/31lajwi/">Lajwi</a>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="about1" tabindex="-1" aria-labelledby="about1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-warning" role="alert">
+                        <h6>Certified</h5>
+                    </div>
+                    <h6>Ini Nanti isinya gambar ya</h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="about2" tabindex="-1" aria-labelledby="about2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-warning" role="alert">
+                        <h6>Award</h6>
+                    </div>
+                    <h6>Ini Nanti isinya VIdeo ya</h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Memanggil DOM -->
+    <script src="js/domImplement.js"></script>
+    <!-- Memanggil Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Memanggil JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
